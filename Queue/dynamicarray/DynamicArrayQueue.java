@@ -16,6 +16,7 @@ public class DynamicArrayQueue {
 		queueArray = new int[CAPACITY];
 	}
 	
+	// pushes data into the queue
 	public void enQueue(int data) {
 		if(isFull()) {
 			expand();
@@ -24,6 +25,7 @@ public class DynamicArrayQueue {
 		queueArray[rear] = data;
 		rear = (rear+1)%CAPACITY;
 	}
+	// removes or serves data from queue
 	public int deQueue() throws Exception {
 		if(size() == 0) {
 			throw new Exception("Queue is empty");
