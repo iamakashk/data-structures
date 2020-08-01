@@ -37,6 +37,7 @@ public class DynamicArrayQueue {
 			return data;
 		}
 	}
+	// returns true if Queue is full
 	public boolean isFull() {
 		if(size() == CAPACITY) {
 			return true;
@@ -44,6 +45,7 @@ public class DynamicArrayQueue {
 			return false;
 		}
 	}
+	//returns size of the queue
 	public int size() {
 		return length+1;
 	}
@@ -59,6 +61,7 @@ public class DynamicArrayQueue {
 		CAPACITY *=2;
 	}
 
+	//returns string representation of the queue
 	public String toString() {
 		String s = "|";
 		for (int i = 0; i < queueArray.length; i++) {
