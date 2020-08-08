@@ -2,7 +2,7 @@ package com.akash.queue.linkedlist;
 
 public class LinkedListNode {
 
-	private int data;
+	int data;
 	LinkedListNode next;
 	
 	public LinkedListNode( int data) {
